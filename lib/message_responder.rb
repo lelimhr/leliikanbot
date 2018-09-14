@@ -90,7 +90,7 @@ class MessageResponder
   def answer_with_status_message
     if @user.present?
       set_status_params
-      if ['staging12.vm', 'staging46.vm', 'staging49.vm', 'staging77.vm'].include? @staging_server
+      if ['staging69.vm', 'staging69-new.vm', 'staging88.vm', 'staging108.vm', 'staging130.vm'].include? @staging_server
         @client = JenkinsApi::Client.new(server_url: config["jenkins_url"], username: config["jenkins_username"], password: config["jenkins_api_token"])
         job = Job.where(staging: @staging_server).last
         if job.present?
@@ -117,7 +117,7 @@ class MessageResponder
   def answer_with_stop_message
     if @user.present?
       set_status_params
-      if ['staging12.vm', 'staging46.vm', 'staging49.vm', 'staging77.vm'].include? @staging_server
+      if ['staging69.vm', 'staging69-new.vm', 'staging88.vm', 'staging108.vm', 'staging130.vm'].include? @staging_server
         @client = JenkinsApi::Client.new(server_url: config["jenkins_url"], username: config["jenkins_username"], password: config["jenkins_api_token"])
         job = Job.where(staging: @staging_server).last
         if job.present?
@@ -167,7 +167,7 @@ class MessageResponder
 
   def jenkins_access(action)
     set_jenkins_params
-    if ['staging12.vm', 'staging46.vm', 'staging49.vm', 'staging77.vm'].include? @staging_server
+    if ['staging69.vm', 'staging69-new.vm', 'staging88.vm', 'staging108.vm', 'staging130.vm'].include? @staging_server
       #jenkins = JenkinsAccess.new(branch: @branch, staging_server: @staging_server, action: action, migrate: @migrate, reindex: @reindex, normalize: @normalize)
       #jenkins.post
       @client = JenkinsApi::Client.new(server_url: config["jenkins_url"], username: config["jenkins_username"], password: config["jenkins_api_token"])

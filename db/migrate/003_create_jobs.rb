@@ -1,4 +1,4 @@
-class CreateJobs < ActiveRecord::Migration
+class CreateJobs < ActiveRecord::Migration[5.2]
   def change
     create_table :jobs, force: true do |t|
       t.integer :user_id
