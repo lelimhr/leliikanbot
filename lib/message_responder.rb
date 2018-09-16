@@ -101,7 +101,7 @@ class MessageResponder
             answer_with_message I18n.t('status_message_running', username: message.from.username, jenkins_job_url: config["jenkins_job_url"]+job.job_id.to_s)
           end
         else
-          answer_with_message I18n.t('status_message_job_not_found', username: message.from.username)
+          answer_with_message I18n.t('status_message_job_not_found', username: message.from.username, staging: @staging_server)
         end
       else
         answer_with_message I18n.t('fail_message_staging', username: message.from.username, staging: @staging_server)

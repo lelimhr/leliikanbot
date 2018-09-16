@@ -1,19 +1,37 @@
 en:
-  greeting_message: "Hi! yang mulia!"
-  help_message: "Tolong hamba yang mulia"
+  greeting_message: "Hai, Ikan siap membantumu :)"
+  help_message: "Ikan dapat membantumu melakukan job di staging melalui perintah, seperti: 
+  <br>/start untuk memanggil bot ikan</br>
+  <br>/deploy (branch) (staging) untuk melakukan deploy, ex: /deploy master staging69 </br>
+  <br>/bb_restart (branch) (staging) untuk restart backburner</br>
+  <br>/bb_start (branch) (staging) untuk start backburner</br>
+  <br>/bb_stop (branch) (staging) untuk stop backburner</br>
+  <br>/lock_release (branch) (staging) untuk lock release</br>
+  <br>/status untuk mengetahui status job terbaru</br>
+  <br>/stop untuk membatalkan job sebelumnya</br>
+  <br></br>
+  <br></br>
+  <br>Tambahkan parameter berikut jika diperlukan:</br>
+  <br>m untuk migrate</br>
+  <br>r untuk reindex</br>
+  <br>n untuk normalize date</br>
+  <br>ex: /deploy master staging m</br>
+  <br></br>
+  <br></br>
+  <br>Hubungi @lelimhr untuk menyampaikan pertanyaan, saran, dan keluhan"</br>
   farewell_message: "Bye! I'll miss you :("
   deploy_message: "@%{username} lagi <b>deploy</b> branch <b>%{branch}</b> ke http://www.%{staging}. %{jenkins_job_url}"
   backburner:restart_message: "@%{username} lagi <b>restart backburner</b> branch <b>%{branch}</b> ke http://www.%{staging}. %{jenkins_job_url}"
   backburner:start_message: "@%{username} lagi <b>start backburner</b> branch <b>%{branch}</b> ke http://www.%{staging}. %{jenkins_job_url}"
   backburner:stop_message: "@%{username} lagi <b>stop backburner</b> branch <b>%{branch}</b> ke http://www.%{staging}. %{jenkins_job_url}"
-  lock:release_message: "Yang mulia @%{username} lagi <b>lock release</b> branch <b>%{branch}</b> ke http://www.%{staging}. %{jenkins_job_url}"
-  fail_message: "Tetap tenang dan semangat wahai yang mulia @%{username}!, botnya lagi sakit"
-  fail_message_time_out: "Mohon maaf wahai yang mulia @%{username}!, dengan berat hati gw sampaikan bahwa terjadi connection timeout ke jenkins"
-  fail_message_jenkins: "Mohon maaf wahai yang mulia @%{username}!, dengan berat hati gw sampaikan bahwa job yang lo jalanin sebelumnya ke <b>%{staging}</b> masih berjalan. %{jenkins_job_url}"
-  fail_message_staging: "Mohon maaf wahai yang mulia @%{username}! yang gw hormati sepenuh hati, gw hanya melayani <b>staging69</b>, <b>staging88</b>, <b>staging108</b>, <b>staging69-new</b>, dan <b>staging130</b>"
-  user_not_registered: "Username @%{username} dengan id %{chat_id} belum terdaftar, silahkan tambahkan sendiri, atau kasih highfive 20 ke @lelimhr biar bisa lansung didaftarkan"
-  status_message_finished: "Lapor yang mulia  @%{username}!, statusnya sekarang adalah <b>%{status}</b>. %{jenkins_job_url}"
-  status_message_running: "Lapor yang mulia  @%{username}!, sepertinya job yang lo jalanin sebelumnya masih running. %{jenkins_job_url}"
-  status_message_job_not_found: "Lapor yang mulia  @%{username}!, sepertinya tidak ada job yang jalan di %{staging} atau ada yang deploy manual ke jenkins"
-  stop_message_finished: "Lapor yang mulia  @%{username}!, pembatalan job berhasil. %{jenkins_job_url}"
-  stop_message_failed: "Lapor yang mulia  @%{username}!, pembatalan job gagal. %{jenkins_job_url}"
+  lock:release_message: "@%{username} lagi <b>lock release</b> branch <b>%{branch}</b> ke http://www.%{staging}. %{jenkins_job_url}"
+  fail_message: "Tetap tenang dan semangat @%{username}!, botnya lagi sakit"
+  fail_message_time_out: "Sorry @%{username}!, terjadi connection timeout ke jenkins. Silakan coba lagi"
+  fail_message_jenkins: "Sorry @%{username}!, job yang kamu jalanin sebelumnya di <b>%{staging}</b> masih berjalan. %{jenkins_job_url}"
+  fail_message_staging: "Sorry @%{username}! ikan hanya bisa membantu di <b>staging69</b>, <b>staging69-new</b>, <b>staging88</b>, <b>staging108</b>, dan <b>staging130</b>"
+  user_not_registered: "Username @%{username} dengan id %{chat_id} belum terdaftar, daftarin ke @lelimhr dulu ya. Jangan lupa kasih highfive 20"
+  status_message_finished: "Hai @%{username}!, statusnya sekarang adalah <b>%{status}</b>. %{jenkins_job_url}"
+  status_message_running: "Sayang sekali @%{username}!, job yang kamu jalanin sebelumnya masih running. %{jenkins_job_url}"
+  status_message_job_not_found: "Hai @%{username}!, sekarang tidak ada job yang lagi jalan di ke http://www.%{staging}. atau mungkin lagi ada yang deploy manual ke jenkins"
+  stop_message_finished: "Hai @%{username}!, pembatalan job berhasil. %{jenkins_job_url}"
+  stop_message_failed: "Hai @%{username}!, pembatalan job gagal. %{jenkins_job_url}"
