@@ -1,24 +1,23 @@
 en:
   greeting_message: "Hai, Ikan siap membantumu :)"
-  help_message: "Ikan dapat membantumu melakukan job di staging melalui perintah, seperti: 
-  <br>/start untuk memanggil bot ikan</br>
-  <br>/deploy (branch) (staging) untuk melakukan deploy, ex: /deploy master staging69 </br>
-  <br>/bb_restart (branch) (staging) untuk restart backburner</br>
-  <br>/bb_start (branch) (staging) untuk start backburner</br>
-  <br>/bb_stop (branch) (staging) untuk stop backburner</br>
-  <br>/lock_release (branch) (staging) untuk lock release</br>
-  <br>/status untuk mengetahui status job terbaru</br>
-  <br>/stop untuk membatalkan job sebelumnya</br>
-  <br></br>
-  <br></br>
-  <br>Tambahkan parameter berikut jika diperlukan:</br>
-  <br>m untuk migrate</br>
-  <br>r untuk reindex</br>
-  <br>n untuk normalize date</br>
-  <br>ex: /deploy master staging m</br>
-  <br></br>
-  <br></br>
-  <br>Hubungi @lelimhr untuk menyampaikan pertanyaan, saran, dan keluhan"</br>
+  help_message: "Ikan dapat membantumu melakukan job di staging melalui perintah, seperti: \n
+  \n /start untuk memanggil bot ikan
+  \n /deploy (branch) (staging) untuk melakukan deploy, ex: /deploy master staging69 
+  \n /bb_restart (branch) (staging) untuk restart backburner
+  \n /bb_start (branch) (staging) untuk start backburner
+  \n /bb_stop (branch) (staging) untuk stop backburner
+  \n /lock_release (branch) (staging) untuk lock release
+  \n /status untuk mengetahui status job terbaru
+  \n /stop untuk membatalkan job sebelumnya
+  \n 
+  \n Tambahkan parameter berikut jika diperlukan:
+  \n m untuk migrate
+  \n r untuk reindex
+  \n n untuk normalize date
+  \n ex: /deploy master staging m
+  \n 
+  \n 
+  \n Hubungi @lelimhr untuk menyampaikan pertanyaan, saran, dan keluhan"
   farewell_message: "Bye! I'll miss you :("
   deploy_message: "@%{username} lagi <b>deploy</b> branch <b>%{branch}</b> ke http://www.%{staging}. %{jenkins_job_url}"
   backburner:restart_message: "@%{username} lagi <b>restart backburner</b> branch <b>%{branch}</b> ke http://www.%{staging}. %{jenkins_job_url}"
